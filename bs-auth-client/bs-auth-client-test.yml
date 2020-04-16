@@ -1,0 +1,26 @@
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: bsauthclient
+  client:
+    serviceUrl:
+      defaultZone: http://bseurekaserver:9761/eureka/
+spring:
+  redis:
+    host: 172.16.2.6
+    port: 6379
+  zipkin:
+    base-url: http://bszipkinserver:9411
+logging:
+  config: http://bsconfigserver:9888/bs-logback/default/master/logback-spring.xml
+uca:
+  oauth2:
+    auth-server:
+      web:
+        timeout: 86400 # 1 day
+        secret: "{cipher}721a1464c48aab71370deab42cafb508cd4c08a4dc5c81af6a9aacfca376c1c5"
+      mobile:
+        timeout: 86400 # 1 day
+        secret: "{cipher}721a1464c48aab71370deab42cafb508cd4c08a4dc5c81af6a9aacfca376c1c5"
+logstash:
+  destination: 172.16.2.5:4567

@@ -1,0 +1,20 @@
+uca:
+  authorization:
+    enabled: true
+    cookie-name: UCA_BSRM_JSESSIONID
+zuul:
+  routes:
+    bs-auth-client: /bs-auth-client/**
+    bs-auth-server: /bs-auth-server/**
+    bs-ops-sys: /bs-ops-sys/**
+    bs-plat-code: /bs-plat-code/**
+    bs-plat-content: /bs-plat-content/**
+    bs-plat-corporate: /bs-plat-corporate/**
+    bs-plat-corporate-ops-sys: /bs-plat-corporate-ops-sys/**
+    bs-plat-file: /bs-plat-file/**
+    bs-plat-msgpush: /bs-plat-msgpush/**
+    bs-plat-sys: /bs-plat-sys/**
+    bs-raw-material-ops-sys: /bs-raw-material-ops-sys/**
+    bs-raw-material-sys: /bs-raw-material-sys/**
+    bs-zipkin-server: /bs-zipkin-server/**
+    bs-raw-material: /**

@@ -1,0 +1,4 @@
+logging:
+  config: http://127.0.0.1:8888/fs-logback/default/master/logback-spring.xml
+logstash:
+  destination: 127.0.0.1:4567

@@ -1,0 +1,17 @@
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: fsplatcode
+  client:
+    serviceUrl:
+      defaultZone: http://fseurekaserver:8761/eureka/
+spring:
+  redis:
+    host: 172.16.2.6
+    port: 6379
+  zipkin:
+    base-url: http://fszipkinserver:8411
+logging:
+  config: http://fsconfigserver:8888/fs-logback/default/master/logback-spring.xml
+logstash:
+  destination: 172.16.2.5:4567

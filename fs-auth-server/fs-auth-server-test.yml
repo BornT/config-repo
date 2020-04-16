@@ -1,0 +1,37 @@
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: fsauthserver
+  client:
+    serviceUrl:
+      defaultZone: http://fseurekaserver:8761/eureka/
+spring:
+  datasource:
+    url: jdbc:mysql://172.16.2.3:3306/fs_auth
+    username: developer
+    password: "{cipher}1ce9b466bb25531a0d4ed5cf5749d37428b854cadac09ec43d9499aa32dd5d09"
+  rabbitmq:
+    host: 172.16.2.6
+    port: 5672
+    username: guest
+    password: "{cipher}eb95f8788faf8ede3c482a026f6f70b5d87c16a77665e8af0ba493e6cc19aed6"
+  redis:
+    host: 172.16.2.6
+    port: 6379
+  zipkin:
+    base-url: http://bszipkinserver:9411
+logging:
+  config: http://fsconfigserver:8888/fs-logback/default/master/logback-spring.xml
+logstash:
+  destination: 172.16.2.5:4567
+auth-server:
+  clients:
+    fs-web:
+      access-token-validity-seconds: 1800 # 30 mins
+      client-secret: "{cipher}a077a21a66e4630028f92739cd81fe60a1a3e1cee07809859648f9fbc741870af4ffb80ef1bd5d91ccb095860add9816"
+    fs-mobile:
+      client-secret: "{cipher}a077a21a66e4630028f92739cd81fe60a1a3e1cee07809859648f9fbc741870af4ffb80ef1bd5d91ccb095860add9816"
+seata:
+  service:
+    grouplist:
+      fs_seata: fsseataserver:8091

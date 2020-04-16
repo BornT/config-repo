@@ -1,0 +1,26 @@
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: fsauthclient
+  client:
+    serviceUrl:
+      defaultZone: http://fseurekaserver:8761/eureka/
+spring:
+  redis:
+    host: 172.16.2.6
+    port: 6379
+  zipkin:
+    base-url: http://fszipkinserver:8411
+logging:
+  config: http://fsconfigserver:8888/fs-logback/default/master/logback-spring.xml
+logstash:
+  destination: 172.16.2.5:4567
+uca:
+  oauth2:
+    auth-server:
+      web:
+        timeout: 86400 # 1 day
+        secret: "{cipher}a077a21a66e4630028f92739cd81fe60a1a3e1cee07809859648f9fbc741870af4ffb80ef1bd5d91ccb095860add9816"
+      mobile:
+        timeout: 86400 # 1 day
+        secret: "{cipher}a077a21a66e4630028f92739cd81fe60a1a3e1cee07809859648f9fbc741870af4ffb80ef1bd5d91ccb095860add9816"

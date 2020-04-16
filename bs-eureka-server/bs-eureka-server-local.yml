@@ -1,0 +1,4 @@
+logging:
+  config: http://127.0.0.1:9888/bs-logback/default/master/logback-spring.xml
+logstash:
+  destination: 127.0.0.1:4567

@@ -1,0 +1,16 @@
+eureka:
+  instance:
+    ip-address: 192.168.100.212
+  client:
+    service-url:
+      defaultZone: http://192.168.63.195:9761/eureka/
+spring:
+  redis:
+    host: 192.168.100.212
+    port: 6379
+  zipkin:
+    base-url: http://192.168.63.195:9411
+logging:
+  config: http://192.168.63.195:9888/bs-logback/default/master/logback-spring.xml
+logstash:
+  destination: 192.168.63.195:4567

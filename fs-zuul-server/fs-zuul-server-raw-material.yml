@@ -1,0 +1,17 @@
+uca:
+  authorization:
+    enabled: true
+    cookie-name: UCA_FSRM_JSESSIONID
+zuul:
+  routes:
+    fs-auth-client: /fs-auth-client/**
+    fs-auth-server: /fs-auth-server/**
+    fs-plat-code: /fs-plat-code/**
+    fs-plat-content: /fs-plat-content/**
+    fs-plat-corporate: /fs-plat-corporate/**
+    fs-plat-file: /fs-plat-file/**
+    fs-plat-msgpush: /fs-plat-msgpush/**
+    fs-plat-sys: /fs-plat-sys/**
+    fs-raw-material-sys: /fs-raw-material-sys/**
+    fs-zipkin-server: /fs-zipkin-server/**
+    fs-raw-material: /**

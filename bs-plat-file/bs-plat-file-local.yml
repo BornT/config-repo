@@ -1,0 +1,23 @@
+eureka:
+  instance:
+    ip-address: 127.0.0.1
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9761/eureka/
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/plat_file?allowMultiQueries=true
+    username: andy
+    password: "{cipher}82e17a3fe9b411d53f81d9e7848ec1946371ea492dacaa5139460e1691f5f92c"
+  redis:
+    host: 127.0.0.1
+    port: 6379
+logging:
+  config: http://127.0.0.1:9888/bs-logback/default/master/logback-spring.xml
+logstash:
+  destination: 127.0.0.1:4567
+uca:
+  plat:
+    file:
+      url: http://127.0.0.1:8555/fs-plat-file
+      exposed-location: /opt/uca/file

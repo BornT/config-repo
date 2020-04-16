@@ -1,0 +1,27 @@
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: bsplatcorporate
+  client:
+    serviceUrl:
+      defaultZone: http://bseurekaserver:9761/eureka/
+spring:
+  datasource:
+    url: jdbc:mysql://172.16.2.3:3306/plat_corporate?allowMultiQueries=true
+    username: developer
+    password: "{cipher}1ce9b466bb25531a0d4ed5cf5749d37428b854cadac09ec43d9499aa32dd5d09"
+  rabbitmq:
+    host: 172.16.2.6
+    port: 5672
+    username: guest
+    password: "{cipher}257b9b2287a88191dd6e43979c7ef67d87c82b15d60da332c8ca4b22285fc03e"
+  zipkin:
+    base-url: http://bszipkinserver:9411
+logging:
+  config: http://bsconfigserver:9888/bs-logback/default/master/logback-spring.xml
+logstash:
+  destination: 172.16.2.5:4567
+seata:
+  service:
+    grouplist:
+      bs_seata: bsseataserver:9091

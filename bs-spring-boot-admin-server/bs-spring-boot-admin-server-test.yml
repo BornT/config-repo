@@ -1,0 +1,15 @@
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: bsspringbootadminserver
+  client:
+    service-url:
+      defaultZone: http://bseurekaserver:9761/eureka/
+logging:
+  config: http://bsconfigserver:9888/bs-logback/default/master/logback-spring.xml
+logstash:
+  destination: 172.16.2.5:4567
+spring:
+  security:
+    user:
+      password: "{cipher}4b90b112ccdc872c8dbb3f6fd6e4eae0d6e7a9a95a5ab09835e8f7726b3740ba"

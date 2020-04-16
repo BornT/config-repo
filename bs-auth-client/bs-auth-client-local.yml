@@ -1,0 +1,21 @@
+eureka:
+  instance:
+    ip-address: 127.0.0.1
+  client:
+    service-url:
+      defaultZone: http://localhost:9761/eureka/
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+logging:
+  config: http://127.0.0.1:9888/bs-logback/default/master/logback-spring.xml
+uca:
+  oauth2:
+    auth-server:
+      web:
+        secret: "{cipher}721a1464c48aab71370deab42cafb508cd4c08a4dc5c81af6a9aacfca376c1c5"
+      mobile:
+        secret: "{cipher}721a1464c48aab71370deab42cafb508cd4c08a4dc5c81af6a9aacfca376c1c5"
+logstash:
+  destination: 127.0.0.1:4567

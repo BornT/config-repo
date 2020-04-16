@@ -1,0 +1,11 @@
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: fszuulserver
+  client:
+    serviceUrl:
+      defaultZone: http://fseurekaserver:8761/eureka/
+logging:
+  config: http://fsconfigserver:8888/fs-logback/default/master/logback-spring.xml
+logstash:
+  destination: 172.16.2.5:4567
