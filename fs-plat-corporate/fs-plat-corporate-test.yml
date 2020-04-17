@@ -27,4 +27,9 @@ logstash:
 seata:
   service:
     grouplist:
-      bs_seata: fsseataserver:8091
+      fs_seata: fsseataserver:8091
+uca:
+  plat:
+    corporate:
+      universal-security-code: "000000"
+
