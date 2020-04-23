@@ -27,4 +27,4 @@ logstash:
 seata:
   service:
     grouplist:
-      bs_seata: fsseataserver:8091
+      fs_seata: fsseataserver:8091
