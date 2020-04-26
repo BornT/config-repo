@@ -14,6 +14,9 @@ spring:
     username: guest
     password: "{cipher}eb95f8788faf8ede3c482a026f6f70b5d87c16a77665e8af0ba493e6cc19aed6"
 uca:
+  global:
+    mq:
+      enable: true
   jdbc:
     maxActive: 20
     initialSize: 1
