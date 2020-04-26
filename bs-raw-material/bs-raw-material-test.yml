@@ -28,10 +28,6 @@ uca:
     minEvictableIdleTimeMillis: 300000
     maxOpenPreparedStatements: 20
     removeAbandonedTimeout: 1800
-    # 开发环境
-    #url: jdbc:mysql://192.168.63.195:3306/raw_material?zeroDateTimeBehavior=convertToNull&characterEncoding=utf-8&allowMultiQueries=true
-    #username: uca
-    #password: "{cipher}40963fb09c296aa686132840b06a234ae70e9bbdaf22e53c602f17841c939c9c"
     ## 测试环境
     url: jdbc:mysql://172.16.2.3:3306/masterdb3?zeroDateTimeBehavior=convertToNull&characterEncoding=utf-8&allowMultiQueries=true
     username: developer
