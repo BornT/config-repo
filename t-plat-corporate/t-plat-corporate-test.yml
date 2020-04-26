@@ -1,0 +1,27 @@
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: fsrawmaterialsys
+  client:
+    service-url:
+      defaultZone: http://bseurekaserver:9761/eureka/
+spring:
+  datasource:
+    url: jdbc:mysql://172.16.2.3:3306:3306/plat_corporate?allowMultiQueries=true
+    username: developer
+    password: "{cipher}1ce9b466bb25531a0d4ed5cf5749d37428b854cadac09ec43d9499aa32dd5d09"
+  rabbitmq:
+    host: 172.16.2.6
+    port: 5672
+    username: guest
+    password: "{cipher}eb95f8788faf8ede3c482a026f6f70b5d87c16a77665e8af0ba493e6cc19aed6"
+logging:
+  config: http://bsconfigserver:9888/bs-logback/default/master/logback-spring.xml
+logstash:
+  destination: 172.16.2.5:4567
+uca:
+  plat:
+    corporate:
+      task:
+        disable-expired-user:
+          cron: "10 0 0 * * ?"
