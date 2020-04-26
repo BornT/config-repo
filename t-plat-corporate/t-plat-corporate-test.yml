@@ -1,7 +1,7 @@
 eureka:
   instance:
     prefer-ip-address: false
-    hostname: fsrawmaterialsys
+    hostname: tplatcorporate
   client:
     service-url:
       defaultZone: http://bseurekaserver:9761/eureka/
