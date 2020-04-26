@@ -19,8 +19,8 @@ uca:
   oauth2:
     auth-server:
       web:
-        timeout: 86400 # 1 day
+        timeout: 7200 # 1 day
         secret: "{cipher}a077a21a66e4630028f92739cd81fe60a1a3e1cee07809859648f9fbc741870af4ffb80ef1bd5d91ccb095860add9816"
       mobile:
-        timeout: 86400 # 1 day
+        timeout: 864000 # 1 day
         secret: "{cipher}a077a21a66e4630028f92739cd81fe60a1a3e1cee07809859648f9fbc741870af4ffb80ef1bd5d91ccb095860add9816"

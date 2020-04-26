@@ -18,7 +18,7 @@ uca:
     auth-server:
       universal-security-code: "000000"
       web:
-        timeout: 86400 # 1 day
+        timeout: 7200 # 1 day
         secret: "{cipher}721a1464c48aab71370deab42cafb508cd4c08a4dc5c81af6a9aacfca376c1c5"
       mobile:
         timeout: 86400 # 1 day
