@@ -19,12 +19,13 @@ spring:
     host: 172.16.2.6
     port: 6379
   zipkin:
-    base-url: http://bszipkinserver:9411
+    base-url: http://fszipkinserver:8411
 logging:
   config: http://fsconfigserver:8888/fs-logback/default/master/logback-spring.xml
 logstash:
   destination: 172.16.2.5:4567
 auth-server:
+  universal-security-code: "000000"
   clients:
     fs-web:
       access-token-validity-seconds: 1800 # 30 mins
