@@ -12,6 +12,11 @@ spring:
     password: "{cipher}1ce9b466bb25531a0d4ed5cf5749d37428b854cadac09ec43d9499aa32dd5d09"
   zipkin:
     base-url: http://bszipkinserver:9411
+  rabbitmq:
+    host: 172.16.2.6
+    port: 5672
+    username: guest
+    password: "{cipher}257b9b2287a88191dd6e43979c7ef67d87c82b15d60da332c8ca4b22285fc03e"
 logging:
   config: http://bsconfigserver:9888/bs-logback/default/master/logback-spring.xml
 logstash:
