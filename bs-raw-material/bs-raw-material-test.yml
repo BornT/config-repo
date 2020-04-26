@@ -18,7 +18,7 @@ uca:
   global:
     mq:
       enable: true
-    jdbc:
+  jdbc:
     maxActive: 20
     initialSize: 1
     maxWait: 60000
