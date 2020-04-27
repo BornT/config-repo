@@ -23,5 +23,5 @@ uca:
   plat:
     file:
       # 统一以前台的入口来对附件进行下载
-      url: https://testapi.ucacc.com/fs-plat-file
+      url: https://testfile.ucacc.com/fs-plat-file
       exposed-location: /opt/uca/file

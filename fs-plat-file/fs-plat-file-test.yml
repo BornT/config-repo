@@ -22,5 +22,5 @@ logstash:
 uca:
   plat:
     file:
-      url: https://testapi.ucacc.com/fs-plat-file
+      url: https://testfile.ucacc.com/fs-plat-file
       exposed-location: /opt/uca/file
