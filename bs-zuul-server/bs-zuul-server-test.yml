@@ -1,7 +1,7 @@
 eureka:
   instance:
     prefer-ip-address: false
-    hostname: bszuulserver
+#    hostname: bszuulserver
   client:
     serviceUrl:
       defaultZone: http://bseurekaserver:9761/eureka/
