@@ -35,24 +35,33 @@ uca:
     url: jdbc:mysql://172.16.2.3:3306/masterdb3?zeroDateTimeBehavior=convertToNull&characterEncoding=utf-8&allowMultiQueries=true
     username: developer
     password: developer
-  # nc定时任务(最大频次建议为每5分钟一次)
   scheduler:
+    system:
+      enable: true
+      #NC定时任务（最大频次建议为每5分钟一次）
     nc:
       # 应收单、应付单
       recPayBill:
-        cron: '0 */10 * * * ?'
+        cron: '0 */5 * * * ?'
       # 收票登记
       regInvoice:
-        cron: '10 */10 * * * ?'
+        cron: '10 */5 * * * ?'
+      #收票登记发送到NC系统的定时器独立的控制开关
+        enable: true
       # 付款单
       rpaPayer:
-        cron: '20 */10 * * * ?'
+        cron: '20 */5 * * * ?'
       # 收款单
       rpaPayee:
-        cron: '30 */10 * * * ?'
+        cron: '30 */5 * * * ?'
+      #收款单、付款单发送到NC系统的定时器独立的控制开关
+      rpa:
+        enable: true
       # 贴现单
       findiscount:
-        cron: '50 */10 * * * ?'
+        cron: '50 */5 * * * ?'
+      #收款单、付款单发送到NC系统的定时器独立的控制开关
+        enable: true
 #日记输出到logstash的tcp地址
 logstash:
   destination: 172.16.2.5:4567
