@@ -59,7 +59,7 @@ uca:
       # 贴现单
       findiscount:
         cron: '50 */5 * * * ?'
-      #收款单、付款单发送到NC系统的定时器独立的控制开关
+      #贴现单发送到NC系统的定时器独立的控制开关
         enable: false
 #日记输出到logstash的tcp地址
 logstash:
