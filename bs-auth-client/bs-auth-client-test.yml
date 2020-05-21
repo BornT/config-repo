@@ -15,7 +15,7 @@ logging:
   config: http://bsconfigserver:9888/bs-logback/default/master/logback-spring.xml
 uca:
   oauth2:
-    universal-security-code: ""
+    universal-security-code: "000000"
     auth-server:
       web:
         timeout: 7200 # 1 day
