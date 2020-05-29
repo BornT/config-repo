@@ -4,7 +4,7 @@ eureka:
     hostname: fsauthclient
   client:
     serviceUrl:
-      defaultZone: http://fseurekaserver:8761/eureka/
+      defaultZone: http://fseurekaserver:8761/eureka/,http://fseurekaserver2:8762/eureka/
 spring:
   redis:
     host: 172.16.2.6

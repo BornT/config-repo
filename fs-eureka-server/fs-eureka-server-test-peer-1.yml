@@ -1,0 +1,9 @@
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: fseurekaserver
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://fseurekaserver2:8762/eureka/

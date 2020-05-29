@@ -4,7 +4,7 @@ eureka:
 #    hostname: fszuulserver
   client:
     serviceUrl:
-      defaultZone: http://fseurekaserver:8761/eureka/
+      defaultZone: http://fseurekaserver:8761/eureka/,http://fseurekaserver2:8762/eureka/
 logging:
   config: http://fsconfigserver:8888/fs-logback/default/master/logback-spring.xml
 logstash:

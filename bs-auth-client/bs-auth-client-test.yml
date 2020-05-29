@@ -4,7 +4,7 @@ eureka:
     hostname: bsauthclient
   client:
     serviceUrl:
-      defaultZone: http://bseurekaserver:9761/eureka/
+      defaultZone: http://bseurekaserver:9761/eureka/,http://bseurekaserver2:9762/eureka/
 spring:
   redis:
     host: 172.16.2.6

@@ -4,7 +4,7 @@ eureka:
     hostname: fsrawmaterial
   client:
     service-url:
-      defaultZone: http://fseurekaserver:8761/eureka/
+      defaultZone: http://fseurekaserver:8761/eureka/,http://fseurekaserver2:8762/eureka/
 spring:
   zipkin:
     base-url: http://fszipkinserver:8411

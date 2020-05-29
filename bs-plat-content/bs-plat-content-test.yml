@@ -4,7 +4,7 @@ eureka:
     hostname: bsplatcontent
   client:
     service-url:
-      defaultZone: http://bseurekaserver:9761/eureka/
+      defaultZone: http://bseurekaserver:9761/eureka/,http://bseurekaserver2:9762/eureka/
 spring:
   datasource:
     url: jdbc:mysql://172.16.2.3:3306/plat_content
