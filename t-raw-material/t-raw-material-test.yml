@@ -41,24 +41,24 @@ uca:
       #NC定时任务（最大频次建议为每5分钟一次）
     nc:
       # 应收单、应付单
-      recPayBill:
+      rec-pay-bill:
         cron: '0 */5 * * * ?'
       # 收票登记
-      regInvoice:
+      reg-invoice:
         cron: '10 */5 * * * ?'
       #收票登记发送到NC系统的定时器独立的控制开关
         enable: true
       # 付款单
-      rpaPayer:
+      rpa-payer:
         cron: '20 */5 * * * ?'
       # 收款单
-      rpaPayee:
+      rpa-payee:
         cron: '30 */5 * * * ?'
       #收款单、付款单发送到NC系统的定时器独立的控制开关
       rpa:
         enable: true
       # 贴现单
-      findiscount:
+      fin-discount:
         cron: '50 */5 * * * ?'
       #贴现单发送到NC系统的定时器独立的控制开关
         enable: true
