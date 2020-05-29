@@ -6,4 +6,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://bseurekaserver:9761/eureka/,http://bseurekaserver2:9762/eureka/
+      defaultZone: http://bseurekaserver:9761/eureka/
