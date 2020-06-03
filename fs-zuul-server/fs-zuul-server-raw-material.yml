@@ -1,7 +1,7 @@
 uca:
   authorization:
     enabled: true
-    cookie-name: TEST_UCA_FSRM_JSESSIONID
+    cookie-name: UCA_FSRM_JSESSIONID
 zuul:
   routes:
     fs-auth-client: /fs-auth-client/**
