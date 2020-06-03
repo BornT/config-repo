@@ -1,7 +1,7 @@
 uca:
   authorization:
     enabled: true
-    cookie-name: TEST_UCA_BSRM_JSESSIONID
+    cookie-name: UCA_BSRM_JSESSIONID
 zuul:
   routes:
     bs-auth-client: /bs-auth-client/**
