@@ -61,6 +61,11 @@ uca:
         cron: '50 */5 * * * ?'
       #贴现单发送到NC系统的定时器独立的控制开关
         enable: false
+      # NC票据资金标识
+      register-update:
+        cron: '15 */10 * * * ?'
+        # NC票据资金标识发送到nc系统的定时器独立的控制开关
+        enable: false
 #日记输出到logstash的tcp地址
 logstash:
   destination: 172.16.2.5:4567
