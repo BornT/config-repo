@@ -33,8 +33,8 @@ uca:
     cgb-pay-password: "{cipher}8432427924d7d11d6f7b7b6080530433682a49550f1c2e89c5fdf7cf9477b150"
     universal-security-code: "000000"
     temp-file-path: /opt/uca/file/temp
-    temp-file-url: http://file.ucacc-dev.com/fs-plat-file/raw-material/temp
-    eletronic-receipt-file-url: http://testfile.ucacc.com/bs-plat-file/raw-material/ElectronicReceipt/20000222
+    temp-file-url: https://testfile.ucacc.com/fs-plat-file/raw-material/temp
+    eletronic-receipt-file-url: https://testfile.ucacc.com/bs-plat-file/raw-material/ElectronicReceipt/20000222
     bill:
       payment-credential-corporates:
         - e6b190a9ef2b471cae78890da2f67987
