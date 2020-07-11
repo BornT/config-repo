@@ -4,7 +4,7 @@ eureka:
     hostname: fsfinancesys
   client:
     service-url:
-      defaultZone: http://fseurekaserver:9761/eureka/,http://fseurekaserver2:9762/eureka/
+      defaultZone: http://fseurekaserver:8761/eureka/,http://fseurekaserver2:8762/eureka/
 spring:
   datasource:
     url: jdbc:mysql://172.16.2.3:3306/finance_sys
