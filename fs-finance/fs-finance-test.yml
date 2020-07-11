@@ -14,7 +14,7 @@ spring:
     host: 172.16.2.6
     port: 6379
   rabbitmq:
-    host: 192.168.63.195
+    host: 172.16.2.6
     port: 5672
     username: guest
     password: "{cipher}eb95f8788faf8ede3c482a026f6f70b5d87c16a77665e8af0ba493e6cc19aed6"
