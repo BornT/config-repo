@@ -31,6 +31,6 @@ uca:
     cgb-pay-url: http://172.16.2.6\:9080/cgbpay/v1
     cgb-pay-name: ucacc_01
     cgb-pay-password: "{cipher}8432427924d7d11d6f7b7b6080530433682a49550f1c2e89c5fdf7cf9477b150"
-    eletronic-receipt-file-url: http://testfile.ucacc.com/bs-plat-file/raw-material/ElectronicReceipt/20000222
+    eletronic-receipt-file-url: https://testfile.ucacc.com/bs-plat-file/raw-material/ElectronicReceipt/20000222
     pay-apply:
       pay-code-prefix: -T1-
