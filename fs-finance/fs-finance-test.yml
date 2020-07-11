@@ -1,7 +1,7 @@
 eureka:
   instance:
     prefer-ip-address: false
-    hostname: bsopsmsgpush
+    hostname: fsfinance
   client:
     service-url:
       defaultZone: http://bseurekaserver:9761/eureka/,http://bseurekaserver2:9762/eureka/
@@ -27,8 +27,8 @@ logstash:
 uca:
   fs-finance:
     hxb-pay-password: "{cipher}3b07d6d1ac32defad3b8adca32d3bbdae4ed75deda4897bb24f334c6eab3c049"
-    hxb-pay-url: http://172.16.2.6\:9070/ucacc-pay
-    cgb-pay-url: http://172.16.2.6\:9080/cgbpay/v1
+    hxb-pay-url: http://172.16.2.6:9070/ucacc-pay
+    cgb-pay-url: http://172.16.2.6:9080/cgbpay/v1
     cgb-pay-name: ucacc_01
     cgb-pay-password: "{cipher}8432427924d7d11d6f7b7b6080530433682a49550f1c2e89c5fdf7cf9477b150"
     universal-security-code: "000000"
