@@ -34,5 +34,5 @@ ucacc:
       bank:
         open-account-url: https://my-st1.orangebank.com.cn/corporbank/perRegedit_jsyb.do
         main-acct-id: 15000124617572
-        platform-code: 1015
+        platform-code: 9254
         platform-name: 众陶联
