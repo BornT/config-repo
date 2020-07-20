@@ -31,10 +31,12 @@ uca:
     cgb-pay-url: http://172.16.2.6:9080/cgbpay/v1
     cgb-pay-name: ucacc_01
     cgb-pay-password: "{cipher}8432427924d7d11d6f7b7b6080530433682a49550f1c2e89c5fdf7cf9477b150"
+    ping-an-pay-password: "{cipher}d839332b13d0d15124abd5ddd995fae260550a99b42a54cd5f6447754191b85c"
     universal-security-code: "000000"
-    temp-file-path: /opt/uca/file/temp
+    temp-file-path: /opt/uca/file/raw-material/temp
     temp-file-url: https://testfile.ucacc.com/fs-plat-file/raw-material/temp
     eletronic-receipt-file-url: https://testfile.ucacc.com/fs-plat-file/raw-material/ElectronicReceipt/20000222
+    ping-an-platform-url: https://my-st1.orangebank.com.cn/corporbank/index_payb.jsp
     bill:
       payment-credential-corporates:
         - e6b190a9ef2b471cae78890da2f67987

@@ -33,7 +33,7 @@ uca:
     corporate:
       fs:
         universal-security-code: "000000"
-        temp-file-path: /opt/uca/file/temp
+        temp-file-path: /opt/uca/file/raw-material/temp
         temp-file-url: https://testfile.ucacc.com/fs-plat-file/raw-material/temp
         qcc:
           url: http://api.qichacha.com/ECIV4/Search
