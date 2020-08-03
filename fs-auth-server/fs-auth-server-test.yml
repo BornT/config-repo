@@ -35,6 +35,9 @@ auth-server:
       access-token-validity-seconds: 1800 # 30 mins
       refresh-token-validity-seconds: 7776000 #90 day
       client-secret: "{cipher}a077a21a66e4630028f92739cd81fe60a1a3e1cee07809859648f9fbc741870af4ffb80ef1bd5d91ccb095860add9816"
+  wechat:
+    mini-appid: wxb2fe5e5684caea22
+    mini-secret: 104c7c5352fc81995fe8c0681c418b7e
 seata:
   service:
     grouplist:
