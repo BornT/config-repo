@@ -25,3 +25,7 @@ uca:
       # 统一以前台的入口来对附件进行下载
       url: https://testfile.ucacc.com/fs-plat-file
       exposed-location: /opt/uca/file
+seata:
+  service:
+    grouplist:
+      bs_seata: bsseataserver:9091

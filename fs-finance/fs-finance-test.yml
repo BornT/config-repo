@@ -50,3 +50,8 @@ uca:
       mini-appid: wxb2fe5e5684caea22
       pay-timeout: 6
       notify-url: http://lvhs.ucacc.com/fs-finance/wechat/pay/notify
+
+seata:
+  service:
+    grouplist:
+      fs_seata: fsseataserver:8091

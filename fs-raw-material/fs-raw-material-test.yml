@@ -37,3 +37,7 @@ logstash:
   destination: 172.16.2.5:4567
 logging:
   config: http://fsconfigserver:8888/fs-logback/default/master/logback-spring.xml
+seata:
+  service:
+    grouplist:
+      fs_seata: fsseataserver:8091
