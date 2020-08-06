@@ -1,7 +1,7 @@
 eureka:
   instance:
     prefer-ip-address: false
-    hostname: fsfinance
+    hostname: tfinance
   client:
     service-url:
       defaultZone: http://fseurekaserver:9761/eureka/,http://fseurekaserver2:9762/eureka/
