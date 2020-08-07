@@ -49,7 +49,7 @@ uca:
       sign-key: b3b38bc9f4035c3e995997405efc9465
       mini-appid: wxb2fe5e5684caea22
       pay-timeout: 6
-      notify-url: http://lvhs.ucacc.com/fs-finance/wechat/pay/notify
+      notify-url: https://testapiucacc.com/fs-finance/wechat/pay/notify
 
 seata:
   service:
