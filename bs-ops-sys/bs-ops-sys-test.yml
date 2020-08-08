@@ -7,9 +7,9 @@ eureka:
       defaultZone: http://bseurekaserver:9761/eureka/,http://bseurekaserver2:9762/eureka/
 spring:
   datasource:
-    url: jdbc:mysql://172.16.2.3:3306/ops_sys
-    username: developer
-    password: "{cipher}1ce9b466bb25531a0d4ed5cf5749d37428b854cadac09ec43d9499aa32dd5d09"
+    url: jdbc:mysql://rm-wz9y4h9rwvs17i4cv.mysql.rds.aliyuncs.com:3306/ops_sys
+    username: ucacc1018
+    password: "{cipher}bce2707ccb18fd06160cb677511d9c4164c20c069a39bf1e6706a7c663b2c519"
   rabbitmq:
     host: 172.16.2.6
     port: 5672
