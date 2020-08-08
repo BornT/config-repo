@@ -67,6 +67,7 @@ uca:
         cron: '15 */10 * * * ?'
         # NC票据资金标识发送到nc系统的定时器独立的控制开关
         enable: true
+  file-url: https://testfile.ucacc.com/fs-plat-file/raw-material
 #日记输出到logstash的tcp地址
 logstash:
   destination: 172.16.2.5:4567
