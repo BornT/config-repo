@@ -9,7 +9,7 @@ spring:
   datasource:
     url: jdbc:mysql://rm-wz9y4h9rwvs17i4cv.mysql.rds.aliyuncs.com:3306/raw_material_sys
     username: ucacc1018
-    password: "{cipher}bce2707ccb18fd06160cb677511d9c4164c20c069a39bf1e6706a7c663b2c519"
+    password: "{cipher}d3e57249863c5a031cb73e111c6eb5985d1ce868c799887bb86912ff1c16b584"
   redis:
     host: 172.16.2.6
     port: 6379
