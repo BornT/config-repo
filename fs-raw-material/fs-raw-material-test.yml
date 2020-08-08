@@ -29,9 +29,9 @@ uca:
     maxOpenPreparedStatements: 20
     removeAbandonedTimeout: 1800
  # 测试环境
-    url: jdbc:mysql://rm-wz9y4h9rwvs17i4cv.mysql.rds.aliyuncs.com:3306/ucacc?zeroDateTimeBehavior=convertToNull&characterEncoding=utf-8&allowMultiQueries=true
-    username: ucacc1018
-    password: Uca@161020
+    url: jdbc:mysql://172.16.2.3:3306/ucacc?zeroDateTimeBehavior=convertToNull&characterEncoding=utf-8&allowMultiQueries=true
+    username: developer
+    password: developer
 #日记输出到logstash的tcp地址
 logstash:
   destination: 172.16.2.5:4567

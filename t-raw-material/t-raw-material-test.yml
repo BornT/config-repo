@@ -32,9 +32,9 @@ uca:
     removeAbandonedTimeout: 1800
 
     ## 测试环境
-    url: jdbc:mysql://rm-wz9y4h9rwvs17i4cv.mysql.rds.aliyuncs.com:3306/ucacc?zeroDateTimeBehavior=convertToNull&characterEncoding=utf-8&allowMultiQueries=true
-    username: ucacc1018
-    password: Uca@161020
+    url: jdbc:mysql://172.16.2.3:3306/ucacc?zeroDateTimeBehavior=convertToNull&characterEncoding=utf-8&allowMultiQueries=true
+    username: developer
+    password: developer
   scheduler:
     system:
       enable: true
