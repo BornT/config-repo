@@ -32,7 +32,7 @@ ucacc:
       b2biclient:
         url: http://172.16.2.6:7072
       bank:
-        open-account-url: https://my-st1.orangebank.com.cn/corporbank/perRegedit_jsyb.do
+        open-account-url: https://my-st1.orangebank.com.cn/corporplat/perRegedit_jsyb.do
         main-acct-id: 15000124617572
         platform-code: 9254
         platform-name: 众陶联

@@ -36,7 +36,7 @@ uca:
     temp-file-path: /opt/uca/file/raw-material/temp
     temp-file-url: https://testfile.ucacc.com/fs-plat-file/raw-material/temp
     eletronic-receipt-file-url: https://testfile.ucacc.com/fs-plat-file/raw-material/ElectronicReceipt/20000222
-    ping-an-platform-url: https://my-st1.orangebank.com.cn/corporbank/index_payb.jsp
+    ping-an-platform-url: https://my-st1.orangebank.com.cn/corporplat/index_payb.jsp
     bill:
       payment-credential-corporates:
         - e6b190a9ef2b471cae78890da2f67987
