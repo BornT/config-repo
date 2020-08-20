@@ -31,7 +31,7 @@ uca:
     maxOpenPreparedStatements: 20
     removeAbandonedTimeout: 1800
     ## 测试环境
-    url: jdbc:mysql://172.16.2.3:3306/masterdb4?zeroDateTimeBehavior=convertToNull&characterEncoding=utf-8&allowMultiQueries=true
+    url: jdbc:mysql://172.16.2.3:3306/masterdb3?zeroDateTimeBehavior=convertToNull&characterEncoding=utf-8&allowMultiQueries=true
     username: developer
     password: developer
   scheduler:
