@@ -28,14 +28,14 @@ auth-server:
   universal-security-code: "000000"
   clients:
     bs-web:
-      access-token-validity-seconds: 300 # 5 mins
+      access-token-validity-seconds: 10800 # 3h
       refresh-token-validity-seconds: 2592000 # 30 day
       client-secret: "{cipher}721a1464c48aab71370deab42cafb508cd4c08a4dc5c81af6a9aacfca376c1c5"
     bs-mobile:
-      access-token-validity-seconds: 1800 # 30 mins
+      access-token-validity-seconds: 10800 # 3h
       refresh-token-validity-seconds: 7776000 #90 day
       client-secret: "{cipher}721a1464c48aab71370deab42cafb508cd4c08a4dc5c81af6a9aacfca376c1c5"
 seata:
   service:
     grouplist:
-      bs_seata: bsseataserver:9091
+      bs_seata: bsseataserver:9091 

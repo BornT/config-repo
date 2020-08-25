@@ -28,11 +28,11 @@ auth-server:
   universal-security-code: "000000"
   clients:
     fs-web:
-      access-token-validity-seconds: 300 # 5 mins
+      access-token-validity-seconds: 10800 # 3h
       refresh-token-validity-seconds: 2592000 # 30 day
       client-secret: "{cipher}a077a21a66e4630028f92739cd81fe60a1a3e1cee07809859648f9fbc741870af4ffb80ef1bd5d91ccb095860add9816"
     fs-mobile:
-      access-token-validity-seconds: 1800 # 30 mins
+      access-token-validity-seconds: 10800 # 3h
       refresh-token-validity-seconds: 7776000 #90 day
       client-secret: "{cipher}a077a21a66e4630028f92739cd81fe60a1a3e1cee07809859648f9fbc741870af4ffb80ef1bd5d91ccb095860add9816"
   wechat:
