@@ -1,17 +1,18 @@
 eureka:
   instance:
-    ip-address: 192.168.63.195
+    prefer-ip-address: false
+    hostname: fsshipping
   client:
     service-url:
-      defaultZone: http://192.168.63.195:8761/eureka/,http://192.168.63.195:8762/eureka/
+      defaultZone: http://fseurekaserver:8761/eureka/,http://fseurekaserver2:8762/eureka/
 spring:
   datasource:
-    url: jdbc:mysql://192.168.63.195:3306/shipping
-    username: uca
-    password: "{cipher}d839332b13d0d15124abd5ddd995fae260550a99b42a54cd5f6447754191b85c"
+    url: jdbc:mysql://172.16.2.3:3306/shipping
+    username: developer
+    password: "{cipher}1ce9b466bb25531a0d4ed5cf5749d37428b854cadac09ec43d9499aa32dd5d09"
   zipkin:
-    base-url: http://192.168.63.195:8411
+    base-url: http://fszipkinserver:8411
 logging:
-  config: http://192.168.63.195:8888/fs-logback/default/master/logback-spring.xml
+  config: http://fsconfigserver:8888/fs-logback/default/master/logback-spring.xml
 logstash:
-  destination: 192.168.63.195:4567
+  destination: 172.16.2.5:4567
