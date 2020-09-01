@@ -8,7 +8,7 @@ eureka:
 spring:
   datasource:
     url: jdbc:mysql://172.16.2.3:3306/shipping
-    username: uca
+    username: developer
     password: "{cipher}1ce9b466bb25531a0d4ed5cf5749d37428b854cadac09ec43d9499aa32dd5d09"
   zipkin:
     base-url: http://bszipkinserver:9411
