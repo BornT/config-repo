@@ -10,7 +10,7 @@ spring:
     host: 172.16.2.6
     port: 6379
   zipkin:
-    base-url: http://fszipkinserver:8411
+    base-url: http://172.16.2.6:8411
 logging:
   config: http://fsconfigserver:8888/fs-logback/default/master/logback-spring.xml
 logstash:

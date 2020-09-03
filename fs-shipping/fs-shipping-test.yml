@@ -11,7 +11,7 @@ spring:
     username: developer
     password: "{cipher}1ce9b466bb25531a0d4ed5cf5749d37428b854cadac09ec43d9499aa32dd5d09"
   zipkin:
-    base-url: http://fszipkinserver:8411
+    base-url: http://172.16.2.6:8411
 logging:
   config: http://fsconfigserver:8888/fs-logback/default/master/logback-spring.xml
 logstash:
