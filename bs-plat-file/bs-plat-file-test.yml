@@ -14,7 +14,7 @@ spring:
     host: 172.16.2.6
     port: 6379
   zipkin:
-    base-url: http://bszipkinserver:9411
+    base-url: http://zipkinserver:9411
 logging:
   config: http://bsconfigserver:9888/bs-logback/default/master/logback-spring.xml
 logstash:

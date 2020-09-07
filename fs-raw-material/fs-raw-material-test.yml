@@ -7,7 +7,7 @@ eureka:
       defaultZone: http://fseurekaserver:8761/eureka/,http://fseurekaserver2:8762/eureka/
 spring:
   zipkin:
-    base-url: http://172.16.2.6:8411
+    base-url: http://zipkinserver:9411
   rabbitmq:
     host: 172.16.2.6
     port: 5672

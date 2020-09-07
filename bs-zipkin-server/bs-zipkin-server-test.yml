@@ -1,7 +1,7 @@
 eureka:
   instance:
     prefer-ip-address: false
-    hostname: bszipkinserver
+    hostname: zipkinserver
   client:
     serviceUrl:
       defaultZone: http://bseurekaserver:9761/eureka/,http://bseurekaserver2:9762/eureka/

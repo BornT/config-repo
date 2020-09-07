@@ -16,7 +16,7 @@ spring:
     username: guest
     password: "{cipher}257b9b2287a88191dd6e43979c7ef67d87c82b15d60da332c8ca4b22285fc03e"
   zipkin:
-    base-url: http://bszipkinserver:9411
+    base-url: http://zipkinserver:9411
 logging:
   config: http://bsconfigserver:9888/bs-logback/default/master/logback-spring.xml
 logstash:
