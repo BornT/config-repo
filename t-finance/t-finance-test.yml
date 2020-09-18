@@ -24,3 +24,10 @@ logging:
   config: http://bsconfigserver:9888/bs-logback/default/master/logback-spring.xml
 logstash:
   destination: 172.16.2.5:4567
+uca:
+  t-finance:
+    scheduler:
+      offline-payapply-auto-confirm:
+        cron: '23 0/10 * * * ?'
+      third-party-payapply:
+        cron: '13 0/10 * * * ?'
