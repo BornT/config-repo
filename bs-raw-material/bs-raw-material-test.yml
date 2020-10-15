@@ -15,7 +15,7 @@ spring:
     password: "{cipher}eb95f8788faf8ede3c482a026f6f70b5d87c16a77665e8af0ba493e6cc19aed6"
 uca:
   back-staging-url: https://testadminhxxt.ucacc.com/
-  acc-period-lock-price-expiration-time: 16:00
+  acc-period-lock-price-expiration-time: "16:00"
   global:
     mq:
       enable: true
