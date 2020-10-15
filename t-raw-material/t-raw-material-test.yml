@@ -39,6 +39,8 @@ uca:
   scheduler:
     remind-confirm-perf:
       cron: '11 */5 * * * ?'
+    remind-assign-perf:
+      cron: '11 */5 * * * ?'
     system:
       enable: true
       #NC定时任务（最大频次建议为每5分钟一次）
