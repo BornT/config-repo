@@ -33,4 +33,4 @@ uca:
 seata:
   service:
     grouplist:
-      bs_seata: bsseataserver:9091
+      bs_seata: fsseataserver:8091
