@@ -1,0 +1,23 @@
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: fsdatarequest
+  client:
+    service-url:
+      defaultZone: http://fseurekaserver:8761/eureka/,http://fseurekaserver2:8762/eureka/
+spring:
+  zipkin:
+    base-url: http://zipkinserver:9411
+logging:
+  config: http://fsconfigserver:8888/fs-logback/default/master/logback-spring.xml
+logstash:
+  destination: 172.16.2.5:4567
+
+uca:
+  poit:
+    url: https://api.poi-t.cn/poit-open-api/open/ent/original-data/list
+    access-key-id: 50rDotwYHV6n3Rw2
+    access-key-secret: 9vVl0Vj17irVbpwZDQk7wadFmuKdyuEm
+    eid: 9e5c46c8e39811e7b15d7cd30ac334e0
+    code: ''
+    version: '2017-09-19'
