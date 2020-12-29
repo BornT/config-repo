@@ -37,8 +37,6 @@ uca:
     username: developer
     password: developer
   scheduler:
-    system:
-      enable: false
       #NC定时任务（最大频次建议为每5分钟一次）
     nc:
       # 应收单、应付单
