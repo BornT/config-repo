@@ -72,7 +72,8 @@ uca:
         enable: true
       #逾期日期更新任务
       update-platform-trade-apply-due-date:
-        cron: '2 5 0 * * ?'
+        cron: '0 */5 * * * ?'
+               #'2 5 0 * * ?'
   file-url: https://testfile.ucacc.com/fs-plat-file/raw-material
 #日记输出到logstash的tcp地址
 logstash:
