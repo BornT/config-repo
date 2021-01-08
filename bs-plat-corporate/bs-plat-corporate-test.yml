@@ -25,3 +25,6 @@ seata:
   service:
     grouplist:
       bs_seata: bsseataserver:9091
+uca:
+  cdp:
+    secret-key: n00JwG9B5sJ3yXsk

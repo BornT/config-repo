@@ -32,6 +32,10 @@ uca:
   plat:
     corporate:
       fs:
+        best-sign:
+          sdk-client-host: https://ectest.ucacc.com/openapi/v2
+        cdp:
+          secret-key: n00JwG9B5sJ3yXsk
         universal-security-code: "000000"
         temp-file-path: /opt/uca/file/raw-material/temp
         temp-file-url: https://testfile.ucacc.com/fs-plat-file/raw-material/temp

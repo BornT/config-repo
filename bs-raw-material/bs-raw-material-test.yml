@@ -17,6 +17,7 @@ uca:
   back-staging-url: https://testadminhxxt.ucacc.com/
   acc-period-lock-price-expiration-time: "16:00"
   mem-recharge-lock-price-expiration-time: "16:00"
+  econtract-lock-days: 60
   global:
     mq:
       enable: true

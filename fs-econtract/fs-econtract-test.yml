@@ -26,10 +26,13 @@ logstash:
   destination: 172.16.2.5:4567
 uca:
   econtract:
+    sdk-client-host: https://ectest.ucacc.com/openapi/v2
     tmp-file-path: /opt/uca/file/raw-material/temp
     universal-security-code: "000000"
     best-sign-contract-link-domain: https://t.bestsign.info/
     contract-link-msg-push-template: SMS_206551982
+    contract-expired-seconds: 5184000 #6个月
+    contract-link-expired-seconds: 604800 #7天
 seata:
   service:
     grouplist:
