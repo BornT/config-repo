@@ -33,6 +33,8 @@ uca:
     corporate:
       fs:
         best-sign:
+          developer-id: 2110673409741423137
+          private-key: MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBALUcbIUESOQPYJUNIB6FXR7TJziZrhNIxau5Br+ZsTFx6MNzQQnM4Ie5G5vNpABkFVsiaWfoQwIRI86zdtYszCqaMkmG5EicsSXHBfsPKUbnqtwjDsrCkax5DXFEAGh+8a/WOPlwpTCTBywNchwM3JOvhnhS78OMUeDsJ/zpuawRAgMBAAECgYAd+Fco592cB8NmxuZCxrTzLeP2pM++lzNGyHaKbEd7NCtddIwVsBaTvxkHfk8eVXGHRDmHHVNBW06+nMoUhRM/zjDToYeFyaMu92bpOemp158EMY7L7AcnX0TWKrD9/qBwuqIOVXtkur+sXm3QN1jnJjSf/Wg99oWoePzNCgy8QQJBAOEYpUpOFqEVS1+TVnwaDbEU+b8IBlu3kiAhoBcuqaBeopaQjAuZEwXfYE5zHYLxGIacZALuJQb29RrkqKnLbtkCQQDN+dlvSZCW3KK0i7h0TebG0Uee2efcc7eSlYd9hbJSBJXHv3F9RdlgM4xvIodZ/4iu4UsloRaVUkIUaexXrtP5AkEA0jXk7r58LZSoXipHgwAFt1ECZt9EqNSHN1CPo/ak3KpkJj35Oz+J31sbIkgo0Eb9g4B7ea0SkS2B+sp9pIviCQJBAJ7izoF0I97bz36qEN1WgmB3a2H0AVEiykZ+pgeDrGxsMQXmfar+yJHW8cuAvRwFa/BKxeb+/iatT1/j3XY93DECQFVcsDMpYPaS6JxcZ3o8OB9Zg7GxAJCpAlTsZJTNKxgqvIfpDpk78/DMjtIdyaOKthPU1j7t3XkENa3Gt4Hdj7k=
           sdk-client-host: https://ectest.ucacc.com/openapi/v2
         cdp:
           secret-key: n00JwG9B5sJ3yXsk
