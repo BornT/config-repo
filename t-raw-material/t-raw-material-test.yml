@@ -77,8 +77,8 @@ uca:
         # NC票据资金标识发送到nc系统的定时器独立的控制开关
         enable: true
         # 测试环境可以添加这个字段修改合同锁定时间，不配置该字段默认合同锁定执行时间为每天00:04:00
-        econtract-lock:
-          cron: '0 */10 * * * ?'
+      econtract-lock:
+        cron: '0 */10 * * * ?'
   file-url: https://testfile.ucacc.com/fs-plat-file/raw-material
 #日记输出到logstash的tcp地址
 logstash:
