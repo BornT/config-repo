@@ -39,7 +39,7 @@ uca:
         cdp:
           secret-key: n00JwG9B5sJ3yXsk
         universal-security-code: "000000"
-        temp-file-path: /opt/uca/file/raw-material/temp
+        tmp-file-path: /opt/uca/file/raw-material/temp
         temp-file-url: https://testfile.ucacc.com/fs-plat-file/raw-material/temp
         qcc:
           url: http://api.qichacha.com/ECIV4/Search
