@@ -33,7 +33,7 @@ uca:
     cgb-pay-password: "{cipher}8432427924d7d11d6f7b7b6080530433682a49550f1c2e89c5fdf7cf9477b150"
     ping-an-pay-password: "{cipher}c604169196314eb39c34fea9d96f27a8f33aff1fe5f6b8b96a4d2dffa6920128"
     universal-security-code: "000000"
-    tmp-file-path: /opt/uca/file/raw-material/temp
+    temp-file-path: /opt/uca/file/raw-material/temp
     temp-file-url: https://testfile.ucacc.com/fs-plat-file/raw-material/temp
     eletronic-receipt-file-url: https://testfile.ucacc.com/fs-plat-file/raw-material/ElectronicReceipt/20000222
     ping-an-platform-url: https://my-st1.orangebank.com.cn/corporplat/index_payb.jsp
