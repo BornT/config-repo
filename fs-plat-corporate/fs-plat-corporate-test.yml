@@ -41,6 +41,8 @@ uca:
         universal-security-code: "000000"
         temp-file-path: /opt/uca/file/raw-material/temp
         temp-file-url: https://testfile.ucacc.com/fs-plat-file/raw-material/temp
+        file-path: /opt/uca/file
+        file-url: https://testfile.ucacc.com/fs-plat-file
         qcc:
           url: http://api.qichacha.com/ECIV4/Search
           appkey: e5e7ac93ccf240a5991e058c19dcf267
