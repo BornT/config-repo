@@ -1,0 +1,81 @@
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname:
+  client:
+    service-url:
+      defaultZone: http://bseurekaserver:9761/eureka/,http://bseurekaserver2:9762/eureka/
+spring:
+  zipkin:
+    base-url: http://zipkinserver:9411
+  rabbitmq:
+    host: 172.16.2.6
+    port: 5672
+    username: guest
+    password: "{cipher}eb95f8788faf8ede3c482a026f6f70b5d87c16a77665e8af0ba493e6cc19aed6"
+uca:
+  back-staging-url: https://testadminhxxt.ucacc.com/
+  temp-file-path: /opt/uca/file/raw-material/temp
+  acc-period-lock-price-expiration-time: "16:00"
+  mem-recharge-lock-price-expiration-time: "16:00"
+  global:
+    mq:
+      enable: true
+    schedule:
+      enable: false
+    export:
+      enable: true
+  jdbc:
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 10
+    maxIdle: 15
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    maxOpenPreparedStatements: 20
+    removeAbandonedTimeout: 1800
+    # 测试环境
+    url: jdbc:mysql://172.16.2.3:3306/masterdb3?zeroDateTimeBehavior=convertToNull&characterEncoding=utf-8&allowMultiQueries=true
+    username: developer
+    password: developer
+  scheduler:
+    #NC定时任务（最大频次建议为每5分钟一次）
+    nc:
+      # 应收单、应付单
+      rec-pay-bill:
+        cron: '0 */5 * * * ?'
+      # 收票登记
+      reg-invoice:
+        cron: '10 */5 * * * ?'
+        #收票登记发送到NC系统的定时器独立的控制开关
+        enable: false
+      # 付款单
+      rpa-payer:
+        cron: '20 */5 * * * ?'
+      # 收款单
+      rpa-payee:
+        cron: '30 */5 * * * ?'
+      #收款单、付款单发送到NC系统的定时器独立的控制开关
+      rpa:
+        enable: false
+      # 贴现单
+      fin-discount:
+        cron: '50 */5 * * * ?'
+        #贴现单发送到NC系统的定时器独立的控制开关
+        enable: false
+      # NC票据资金标识
+      register-update:
+        cron: '15 */10 * * * ?'
+        # NC票据资金标识发送到nc系统的定时器独立的控制开关
+        enable: false
+  file-url: https://testfile.ucacc.com/fs-plat-file/raw-material
+#日记输出到logstash的tcp地址
+logstash:
+  destination: 172.16.2.5:4567
+logging:
+  config: http://bsconfigserver:9888/bs-logback/default/master/logback-spring.xml
+seata:
+  service:
+    grouplist:
+      bs_seata: bsseataserver:9091
