@@ -1,7 +1,7 @@
 eureka:
   instance:
     prefer-ip-address: false
-    hostname:
+    hostname: bsrawmaterial
   client:
     service-url:
       defaultZone: http://bseurekaserver:9761/eureka/,http://bseurekaserver2:9762/eureka/
